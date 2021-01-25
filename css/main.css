@@ -302,9 +302,7 @@ h3.heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-around;
   grid-gap: 32px;
   margin-top: 32px;
 }
@@ -860,11 +858,11 @@ input:hover, textarea:hover {
   }
   .our-proj-img {
     margin: 16px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: grid;
     grid-gap: 16px;
   }
   .spark-app > p, .car-app > p {
+    width: 100vw;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: normal;
